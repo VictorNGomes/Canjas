@@ -20,4 +20,6 @@ data_clean = data_english.drop_non_english_rows("App")
 
 data_clean.explore_data(0,3,rows_and_columns=True)
 
-data_clean.rows_with()
+list_free = data_clean.group_by('Price', 0.0)
+
+list_free.explore_data(0,3,rows_and_columns=True)

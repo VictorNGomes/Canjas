@@ -10,6 +10,7 @@ class Dataframe:
         self.data = data
         self.n_rows = len(self.data) - head
         self.n_columns = len(self.data[0])
+
         if head:
             self.header = data[0]
             self.data = data[1:]
@@ -113,8 +114,17 @@ class Dataframe:
         
         return Dataframe(data_l)
 
-    def group_by():
-        pass
+    def group_by(self,column,param):
+        l = []
+        l.append(self.header)
+
+        for each_row in self.data:
+            index = each_row[self.header.index(column)]
+            if index == str(param) or index == '0':
+                l.append(each_row)
+        return Dataframe(l)
+
+       
 
 
 
