@@ -1,6 +1,8 @@
+import collections
 from csv import reader
 from email import header
 from numpy import dtype
+from .show_tables import Table
 
 from requests import head
 
@@ -123,6 +125,35 @@ class Dataframe:
             if index == str(param) or index == '0':
                 l.append(each_row)
         return Dataframe(l)
+
+    def freq_table(self,index, percent = False):
+        table = {}
+        total = 0
+        index = self.header.index(index)
+    
+        for row in self.data:
+            total += 1
+            value = row[index]
+            if value in table:
+                table[value] += 1
+            else:
+                table[value] = 1
+        
+        table_percentages = {}
+        for key in table:
+            if percent:
+                percentage = (table[key] / total) * 100
+                table_percentages[key] = percentage
+            else:
+                table_percentages[key] = table[key] 
+        
+        return Table(table_percentages)
+
+    def show_row_with_condition(self,col,condition):
+        for app in self.data:
+            if app[self.header.index(col)] == condition:
+                print(f"{app}")
+
 
        
 

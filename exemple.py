@@ -23,3 +23,20 @@ data_clean.explore_data(0,3,rows_and_columns=True)
 list_free = data_clean.group_by('Price', 0.0)
 
 list_free.explore_data(0,3,rows_and_columns=True)
+
+table = list_free.freq_table('Genres')
+
+table.display_table()
+
+table = list_free.freq_table('Genres', percent=True)
+
+table.display_table()
+
+table2 =list_free.freq_table('Installs')
+
+table2.display_table()
+
+table = list_free.freq_table('Category')
+
+table.avarage('Installs',list_free,by='Category')
+
