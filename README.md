@@ -7,8 +7,10 @@
  
  
  # Instalação
+ ~~~git
  git clone https://github.com/VictorNGomes/Canjas.git
  cd canjas
+ ~~~
  
  # Abrindo CSV em explorando dados
  No projeto está contido dois arquivos do formato csv para realizar as manipulações.A função de explorar foi encapsuladas no objeto na qual a read_csv() retorna.
