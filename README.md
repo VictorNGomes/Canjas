@@ -1,4 +1,4 @@
-![Logo](https://github.com/VictorNGomes/Canjas/blob/main/logo_canjas.png)
+![Logo](https://github.com/VictorNGomes/Canjas/blob/main/logo%20_canjas_capa.png)
 
 
 # Project: Profitable App Profiles for the App Store and Google Play Markets
