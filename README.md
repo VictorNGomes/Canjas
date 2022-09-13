@@ -46,10 +46,14 @@ table = list_free.freq_table('Genres', percent=True)
 table.display_table()
 
  ```
-# Médias de instação por genero
+# Médias de instalação por genero
 A estrutura Table possui o metodo average na qual motifica a tabela com as médias de instalções por categoria
 ```python
 table = list_free.freq_table('Category')
 table.average('Installs',list_free,by='Category')
+
 ```
+
+# Exemplos:
+[Notebook com exemplos](https://exemplo.com/)
 
