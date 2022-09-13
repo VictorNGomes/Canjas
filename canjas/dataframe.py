@@ -18,7 +18,7 @@ class Dataframe:
             self.data = data[1:]
 
     def __str__(self) -> str:
-        if self.head:
+        if self._head:
             return f"{self.header} \n {self.data}"
         return f"{self.data}"
 
