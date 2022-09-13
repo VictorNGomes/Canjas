@@ -55,5 +55,5 @@ table.average('Installs',list_free,by='Category')
 ```
 
 # Exemplos:
-[Notebook com exemplos](https://exemplo.com/)
+[Notebook com exemplos](https://github.com/VictorNGomes/Canjas/blob/main/Project_Profitable_App_Profiles_for_the_App_Store_and_Google_Play_Markets.ipynb)
 
